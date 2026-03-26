@@ -1,7 +1,7 @@
 import sqlite3
 
 def create_doctors_table():
-    conn = sqlite3.connect("hospital.db")
+    conn = sqlite3.connect("Database/hospital.db")
     cursor = conn.cursor()
 
     cursor.execute(""" create table doctors (
@@ -19,7 +19,7 @@ def create_doctors_table():
     conn.close()
 
 def create_patients_table():
-    conn = sqlite3.connect("hospital.db")
+    conn = sqlite3.connect("Database/hospital.db")
     cursor = conn.cursor()
 
     cursor.execute(""" create table patients (
@@ -39,7 +39,7 @@ def create_patients_table():
     conn.close()
 
 def create_appointments_table():
-    conn = sqlite3.connect("hospital.db")
+    conn = sqlite3.connect("Database/hospital.db")
     cursor = conn.cursor()
 
     cursor.execute(""" create table appointments (
@@ -59,7 +59,7 @@ def create_appointments_table():
     conn.close()
 
 def create_treatments_table():
-    conn = sqlite3.connect("hospital.db")
+    conn = sqlite3.connect("Database/hospital.db")
     cursor = conn.cursor()
 
     cursor.execute(""" create table treatments (
@@ -77,7 +77,7 @@ def create_treatments_table():
 
 
 def create_billings_table():
-    conn = sqlite3.connect("hospital.db")
+    conn = sqlite3.connect("Database/hospital.db")
     cursor = conn.cursor()
 
     cursor.execute(""" create table billings (
