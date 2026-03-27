@@ -21,33 +21,6 @@ TECNOLOGIAS UTILIZADAS:
   - SQLite
   - SQL
 
-
-ESTRUTURA DO PORJETO:
-
-proejto_pipeline_hospital/
-│
-├── data/
-│   ├── Processed/    # Dados tratados
-│   └── Raw/          # Dados brutos
-│
-├── Database/
-│   └── hospital.db         # Banco de dados SQLite
-│
-├── Pipeline/
-│   ├── extract.py          # Extração dos dados
-│   ├── transform.py        # Transformação dos dados
-│   ├── load.py             # Carga no banco
-│   └── tables.py           # Criação das tabelas
-│
-├── sql/
-│   ├── model.png           # Modelo Relacional do banco de dados
-│   ├── queries.py          # queries com Sql/Python
-│
-├── main.py                 # Orquestração da pipeline
-│
-├── requirements.txt
-└── README.md
-
 MODELAGEM DE DAODS:
 
  O banco de dados foi estruturado de forma relacional, contendo as seguintes tabelas:
